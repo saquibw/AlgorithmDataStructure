@@ -15,14 +15,13 @@ public final class LinearSearch<E> {
 	}
 	
 	public E search(E item) {
-		E result = null;
 		for (int i = 0; i < this.data.length; i++) {
 			if (this.data[i].equals(item)) {
-				System.out.println("Data found at index: " + i);
-				result = item;
+				System.out.println("Item found at index: " + i);
+				return item;
 			}
 		}
-		if (result == null) System.out.println("Data not found!");
-		return result;
+		System.out.println("Item not found!");
+		return null;
 	}
 }
