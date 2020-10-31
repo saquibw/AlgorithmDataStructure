@@ -1,15 +1,20 @@
 package com.learning.algorithm.sort;
 
+import java.time.LocalDateTime;
+
+import com.learning.util.Util;
 
 /**
  * @author saquibul
  * @Description The time complexity of selection sort algorithm is O(n^2)
- * @Steps Find the smallest number in every iteration and put it in the early indexes.
+ * @Steps Find the smallest number in every iteration and put it in the earliest index.
  */
 public class SelectionSort {
 	
 	public static final int[] sort(int[] data) {
 		System.out.println("Applying selection sort algorithm");
+		LocalDateTime t = LocalDateTime.now();
+		
 		for (int i = 0; i < data.length - 1; i++) {
 			int minIndex = i;
 			
@@ -25,6 +30,7 @@ public class SelectionSort {
 				data[minIndex] = temp;
 			}
 		}
+		Util.printTimeElapsed(t);
 		return data;		
 	}
 }

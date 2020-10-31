@@ -1,5 +1,8 @@
 package com.learning.algorithm.sort;
 
+import java.time.LocalDateTime;
+
+import com.learning.util.Util;
 
 /**
  * @author saquibul
@@ -9,6 +12,7 @@ package com.learning.algorithm.sort;
 public class BubbleSort {
 	public static final int[] sort(int[] data) {
 		System.out.println("Applying bubble sort algorithm");
+		LocalDateTime t = LocalDateTime.now();
 		int len = data.length;
 		
 		while(len > 0) {
@@ -21,6 +25,7 @@ public class BubbleSort {
 			}
 			len--;
 		}
+		Util.printTimeElapsed(t);
 		return data;
 	}
 }

@@ -1,5 +1,8 @@
 package com.learning.algorithm.sort;
 
+import java.time.LocalDateTime;
+
+import com.learning.util.Util;
 
 /**
  * @author saquibul
@@ -11,6 +14,8 @@ public class InsertionSort {
 
 	public static int[] sort(int[] data) {
 		System.out.println("Applying insertion sort algorithm");
+		LocalDateTime t = LocalDateTime.now();
+		
 		for (int i = 1; i < data.length; i++) {
 			int item = data[i];
 			int j = i-1;
@@ -21,6 +26,7 @@ public class InsertionSort {
 			}
 			data[j+1] = item;
 		}
+		Util.printTimeElapsed(t);
 		return data;
 	}
 }
