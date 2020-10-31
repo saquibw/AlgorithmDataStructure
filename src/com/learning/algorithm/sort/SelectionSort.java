@@ -3,7 +3,8 @@ package com.learning.algorithm.sort;
 
 /**
  * @author saquibul
- * @Description The complexity of selection sort algorithm is O(n^2)
+ * @Description The time complexity of selection sort algorithm is O(n^2)
+ * @Steps Find the smallest number in every iteration and put it in the early indexes.
  */
 public class SelectionSort {
 	
