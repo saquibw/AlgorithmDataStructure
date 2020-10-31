@@ -7,7 +7,7 @@ package com.learning.algorithm.sort;
  */
 public class SelectionSort {
 	
-	public static int[] sort(int[] data) {
+	public static final int[] sort(int[] data) {
 		System.out.println("Applying selection sort algorithm");
 		for (int i = 0; i < data.length - 1; i++) {
 			int minIndex = i;
