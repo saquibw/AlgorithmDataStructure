@@ -1,5 +1,12 @@
 package com.learning.algorithm.search;
 
+
+/**
+ * @author saquibul
+ * 
+ * @Description Binary search only applicable when items are sorted. Time complexity O(logn), Space complexity O(1)
+ *
+ */
 public class BinarySearch {
 	private Integer[] data;
 	
